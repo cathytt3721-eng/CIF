@@ -1,0 +1,33 @@
+print("Hello wolrd")
+
+import turtle
+t = turtle.Turtle()
+t.shape("turtle")
+s = turtle.Screen()
+s.bgcolor("black") 
+t.penup() 
+t.goto(200,-200)
+t.pendown()
+t.shapesize(1)
+t.color("red")
+t.begin_fill()
+for i in range(2):
+    t.forward(20)
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+t.end_fill()
+t.color("white")
+t.shape("circle")
+t.penup()
+t.forward(10)
+t.pendown()
+t.speed(9)
+t.left(90)
+for i in range(30): 
+    t.forward(9)
+    t.left(1)
+for i in range(30):
+    t.forward(8)
+    t.left(2)
+turtle.done()
